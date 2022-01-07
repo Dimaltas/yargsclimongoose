@@ -21,7 +21,7 @@ exports.readMovie = async() => {
         console.log(error);
     }
 }
-exports.updateMovie = async(movieObj) =>{
+exports.updateMovie = async(movieObj) =>{               //$ set:{} return
     try{
         await Movie.update(                           //Updates the movies (title, actor, rating)  UNDER CONSTRUCTION
             { title: movieObj.title},
